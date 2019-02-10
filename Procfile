@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -cp target/SparkWeb-1.0-SNAPSHOT-jar-with-dependencies.jar org.edu.eci.SparkWeb
