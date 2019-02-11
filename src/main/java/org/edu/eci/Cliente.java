@@ -18,9 +18,10 @@ public class Cliente {
 		BufferedReader in;
 		PrintWriter out;
 		try {
+			clienteSocket = new Socket(HOST, PORT);
 			in = new BufferedReader(new InputStreamReader(clienteSocket.getInputStream()));
 			out = new PrintWriter(clienteSocket.getOutputStream());
-			clienteSocket = new Socket(HOST, PORT);
+			
 
 			String mensaje;
 			while ((mensaje = in.readLine()) != null) {
